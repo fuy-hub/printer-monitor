@@ -1,0 +1,29 @@
+<!--網頁的主檔案-->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列印機監控與控制系統</title>
+    <link rel="stylesheet" href="2_style.css">
+</head>
+<body>
+    <header>
+        <h1>列印機監控與控制系統</h1>
+    </header>
+
+    <div id="status">
+        <h2>列印機狀態</h2>
+        <p>狀態: <span id="printerStatus">載入中...</span></p>
+        <button id="refreshStatus">刷新狀態</button>
+    </div>
+
+    <div id="control">
+        <h2>控制面板</h2>
+        <button id="startPrint">啟動列印</button>
+        <button id="stopPrint">停止列印</button>
+    </div>
+
+    <script src="3_script.js"></script>
+</body>
+</html>
