@@ -1,29 +1,42 @@
-<!--網頁的主檔案-->
+<!-- 網頁的主檔案 -->
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant"> <!-- 設定網頁語言為繁體中文 -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>列印機監控與控制系統</title>
-    <link rel="stylesheet" href="2_style.css">
+    <meta charset="UTF-8"> <!-- 設定字符集為 UTF-8，支持多種語言字符 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 設定響應式設計，使頁面在各種裝置上適應顯示 -->
+    <title>列印機監控與控制系統</title> <!-- 設定網頁標題 -->
+    <link rel="stylesheet" href="2_style.css"> <!-- 引入外部 CSS 樣式檔案 -->
 </head>
 <body>
     <header>
-        <h1>列印機監控與控制系統</h1>
+        <h1>列印機監控與控制系統</h1> <!-- 網頁的標題，顯示於頁面上方 -->
     </header>
 
+    <!-- 列印機狀態區域 -->
     <div id="status">
-        <h2>列印機狀態</h2>
-        <p>狀態: <span id="printerStatus">載入中...</span></p>
-        <button id="refreshStatus">刷新狀態</button>
+        <h2>列印機狀態</h2> <!-- 顯示狀態標題 -->
+        <p>狀態: <span id="printerStatus">載入中...</span></p> <!-- 顯示列印機狀態，預設為「載入中...」 -->
+        <button id="refreshStatus">刷新狀態</button> <!-- 刷新列印機狀態的按鈕 -->
     </div>
 
+    <!-- 控制面板區域 -->
     <div id="control">
-        <h2>控制面板</h2>
-        <button id="startPrint">啟動列印</button>
-        <button id="stopPrint">停止列印</button>
+        <h2>控制面板</h2> <!-- 顯示控制面板標題 -->
+        <button id="startPrint">啟動列印</button> <!-- 啟動列印的按鈕 -->
+        <button id="stopPrint">停止列印</button> <!-- 停止列印的按鈕 -->
     </div>
+    
+    <h1>實時監控直播</h1>
 
-    <script src="3_script.js"></script>
+    <!-- 嵌入 YouTube 直播，帶有自適應寬度和自動播放 -->
+    <script src="3_script.js"></script> <!-- 引入外部 JavaScript 檔案，實現頁面功能 -->
+    <<iframe
+    src="https://player.twitch.tv/?channel=fuy_hub&parent=fuy-hub.github.io"
+    height="480"
+    width="720"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen="true">
+</iframe>
 </body>
 </html>
