@@ -1,0 +1,36 @@
+/* 設定整個頁面的字型、背景色、邊距和內距 */
+body {
+    font-family: Arial, sans-serif; /* 設定頁面字型為 Arial 或 sans-serif 字型 */
+    background-color: #f4f4f9; /* 設定頁面背景色為淡灰色 */
+    margin: 0; /* 移除頁面邊距 */
+    padding: 0; /* 移除頁面內距 */
+}
+
+/* 設定頁面標題區塊的樣式 */
+header {
+    background-color: #0078D7; /* 設定背景色為藍色 */
+    color: white; /* 設定文字顏色為白色 */
+    text-align: center; /* 文字置中 */
+    padding: 1rem 0; /* 設定上下內距為 1rem，左右內距為 0 */
+}
+
+/* 設定列印機狀態區塊和控制面板區塊的樣式 */
+#status, #control {
+    margin: 20px auto; /* 設定上下邊距為 20px，並使其水平置中 */
+    width: 90%; /* 設定寬度為 90% */
+    max-width: 600px; /* 設定最大寬度為 600px */
+    background: white; /* 設定背景色為白色 */
+    border-radius: 8px; /* 設定圓角邊框，半徑為 8px */
+    padding: 20px; /* 設定內距為 20px */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 設定陰影效果，顏色為半透明黑色 */
+}
+
+/* 設定按鈕的樣式 */
+button {
+    background-color: #0078D7; /* 設定背景色為藍色 */
+    color: white; /* 設定文字顏色為白色 */
+    border: none; /* 移除邊框 */
+    border-radius: 5px; /* 設定圓角邊框，半徑為 5px */
+    padding: 10px 20px; /* 設定上下內距為 10px，左右內距為 20px */
+    cursor: pointer; /* 當滑鼠懸停於按鈕上時，顯示為指標形狀 */
+}
