@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Document</title>
+</head>
+
+<style>
+    button{
+        font-size: 25px;
+    }
+    input{
+        width: 50%;
+        height: 10vh;
+        text-align: center;
+        font-size: 25px;
+    }
+
+</style>
+
+<body style="text-align: center;font-size: 25px;background-color: greenyellow;">
+    <h3>請輸入英文單字</h3>
+    <input>
+    <div></div>
+    <p>
+    <button onclick="printWord();">確定</button>
+    <button onclick="clearWord();">清除</button>
+    <script>
+        function printWord(){
+            let textObj=document.querySelector("input");
+            let outputObj=document.querySelector("div");
+            console.log(textObj.value); 
+            outputObj.innerHTML+=textObj.value+"<br>";
+        }
+        function clearWord(){
+            let outputObj=document.querySelector("div");
+            outputObj.innerHTML="";
+        }
+        
+    </script>
+    
+</body>
+</html>
